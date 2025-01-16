@@ -14,62 +14,72 @@
 </head>
 
 <body>
-  <div class="sidebar">
-    <h2>Gentellela Alela!</h2>
-    <p>Welcome, John Doe</p>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Forms</a>
-      <a href="#">UI Elements</a>
-      <a href="#">Tables</a>
-      <a href="#">Data Presentation</a>
-      <a href="#">Layouts</a>
-    </nav>
-  </div>
-  <div class="content">
-    <header>
-      <h1>Contacts Design</h1>
-      <input type="text" placeholder="Search for...">
-    </header>
-    <div class="cards">
-      <div class="card">
-        <img src="https://via.placeholder.com/80" alt="Profile Picture">
-        <h3>Nicole Pearson</h3>
-        <p>Digital Strategist</p>
-        <p>Web Designer / UI / Graphic Artist / Coffee Lover</p>
-        <p>Address: -</p>
-        <p>Phone #: -</p>
-        <div class="actions">
-          <button class="btn-message">Message</button>
-          <button class="btn-profile">View Profile</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/80" alt="Profile Picture">
-        <h3>Nicole Pearson</h3>
-        <p>Digital Strategist</p>
-        <p>Web Designer / UI / Graphic Artist / Coffee Lover</p>
-        <p>Address: -</p>
-        <p>Phone #: -</p>
-        <div class="actions">
-          <button class="btn-message">Message</button>
-          <button class="btn-profile">View Profile</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/80" alt="Profile Picture">
-        <h3>Nicole Pearson</h3>
-        <p>Digital Strategist</p>
-        <p>Web Designer / UI / Graphic Artist / Coffee Lover</p>
-        <p>Address: -</p>
-        <p>Phone #: -</p>
-        <div class="actions">
-          <button class="btn-message">Message</button>
-          <button class="btn-profile">View Profile</button>
-        </div>
-      </div>
+  <header>
+    <h1>Bienvenido a Desarrollo Web y Servicios</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#portfolio">Portafolio</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section id="inicio">
+    <p>Ofrecemos soluciones digitales personalizadas para ayudarte a destacar en el mundo digital. Optimización de
+      plataformas y desarrollo web a medida.</p>
+    <a href="#servicios" class="cta-btn">Ver Servicios</a>
+  </section>
+
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicio">
+      <h3>Desarrollo Web Personalizado</h3>
+      <p>Diseñamos y desarrollamos sitios web que cumplen con las necesidades específicas de tu negocio.</p>
     </div>
-  </div>
+    <div class="servicio">
+      <h3>Consultoría en Bases de Datos</h3>
+      <p>Optimización y gestión de bases de datos para mejorar el rendimiento de tu empresa.</p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portafolio</h2>
+    <p>Descubre algunos de nuestros proyectos más recientes.</p>
+    <a href="#contacto" class="cta-btn">Contáctanos para tu proyecto</a>
+  </section>
+
+  <section id="contacto">
+    <article>
+      <h2>Contacto</h2>
+      <p>¿Tienes alguna consulta? ¡Estamos aquí para ayudarte!</p>
+      <form action="/submit" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required placeholder="Tu correo">
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </article>
+
+  </section>
+  <aside>
+    <blockquote>Mensaje número uno</blockquote>
+    <blockquote>Mensaje número dos</blockquote>
+  </aside>
+
+
+
+  <footer>
+    <p>&copy; 2025 Desarrollo Web y Servicios. Todos los derechos reservados.</p>
+    <nav>
+      <ul>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Términos</a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 
 </html>
